@@ -1,0 +1,17 @@
+A-
+In our system, we employ Celery along with Redis as the message broker to handle the scheduling of periodic tasks, like fetching ISIN lists every 24 hours. The choice of Celery was driven by its proven track record in task management, widespread industry adoption, and robust feature set. This combination provides a reliable and efficient framework for our task scheduling needs.
+
+In terms of reliability, Celery has demonstrated commendable performance in our production environment. We've experienced minimal downtime and task failures attributable to the system. However, while Celery is suitable for our current workload, we recognize that it might face scalability challenges under exceptionally high throughputs.
+
+To address potential scaling issues, we're actively considering alternatives like distributed task queues (such as RabbitMQ) or message queuing systems like Apache Kafka. These options are well-suited for scenarios where we anticipate significant growth in task volume.
+
+Furthermore, as part of our forward-looking strategy, we're exploring microservices architectures and container orchestration platforms like Kubernetes. This would enable us to horizontally scale our task processing, ensuring we can seamlessly adapt to the demands of a rapidly expanding user base.
+
+In summary, Celery with Redis has served us well, offering a solid foundation for managing periodic tasks. However, in anticipation of future scaling requirements, we're proactively evaluating alternative solutions to ensure we're equipped to handle any potential challenges that may arise.
+
+B-
+During my academic years, I had the opportunity to work on a graduation project where I opted for Flask as the web framework. Flask's lightweight and micro-framework approach was ideal for the project's specific requirements. It allowed for a more tailored and minimalistic approach to building the web application, which was well-suited for the scope of the project.
+
+After completing my graduation project, I transitioned to working with Django in a professional setting. Django's batteries-included philosophy and built-in features, such as the admin panel, authentication system, and ORM, proved invaluable for larger and more complex applications. The structured nature of Django also facilitated rapid development and streamlined the process of building robust, feature-rich web applications.
+
+In summary, I chose Flask for my graduation project due to its simplicity and flexibility, which aligned well with the project's scope. However, as I transitioned to more complex, feature-intensive projects in a professional setting, Django became the natural choice due to its comprehensive set of pre-built components and powerful built-in functionalities.
